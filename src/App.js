@@ -21,12 +21,18 @@ import Alert from "./components/Alert";
 import Parent from "./components/Parent";
 import Lists from "./components/Lists";
 import Forms from "./components/Forms";
+import ComponentA from "./components/ComponentA";
+import Home from "./components/Home";
+
+// import "./components/Forms.css";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Forms />
+        <Home />
+        {/* <ComponentA /> */}
+        {/* <Forms /> */}
         {/* <Lists /> */}
         {/* <Parent /> */}
         {/* <Alert /> */}

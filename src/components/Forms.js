@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import "./Forms.module.css";
+import styled from "./Forms.module.css";
+
 export default class Forms extends Component {
   constructor() {
     super();
@@ -8,6 +11,7 @@ export default class Forms extends Component {
       lastName: "",
       college: "",
       mobileNo: "",
+      theme: true,
     };
   }
 
@@ -20,9 +24,9 @@ export default class Forms extends Component {
   render() {
     console.log("Form Rendered");
     const { firstName, lastName, college, mobileNo } = this.state; //destructuring
-
+    const className = this.state.theme ? styled.container : "";
     return (
-      <form onSubmit={(e) => this.handleSubmit(e)}>
+      <form onSubmit={(e) => this.handleSubmit(e)} className={className}>
         <label name="firstName">First Name:</label>
         <input
           type="text"

@@ -29,3 +29,37 @@ var display = temp.func;
 console.log(display);
 
 display(); //
+
+let details = {
+  name: "Abhinav",
+  college: "Lpu",
+  batch: 2024,
+};
+
+//Shallow COPY
+
+let copiedDetails = details;
+
+console.log("before: ", { details }, { copiedDetails });
+
+details.name = "Manjot";
+
+console.log("after: ", { details }, { copiedDetails });
+
+//DEEP COPY
+
+// let copiedDetails = {
+//   name: details.name,
+//   college: details.college,
+//   batch: details.batch,
+// };
+
+// copiedDetails.name = "Manjot";
+
+// console.log({ details }, { copiedDetails });
+
+// let copiedDetails = JSON.parse(JSON.stringify(details));
+
+// copiedDetails.name = "Manjot";
+
+// console.log({ details }, { copiedDetails });
