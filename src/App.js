@@ -23,6 +23,8 @@ import Lists from "./components/Lists";
 import Forms from "./components/Forms";
 import ComponentA from "./components/ComponentA";
 import Home from "./components/Home";
+import LifecycleA from "./components/LifecycleA";
+import Clock from "./components/Clock";
 
 // import "./components/Forms.css";
 
@@ -30,7 +32,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Home />
+        {/* <Clock /> */}
+        <LifecycleA />
+        {/* <Home /> */}
         {/* <ComponentA /> */}
         {/* <Forms /> */}
         {/* <Lists /> */}
