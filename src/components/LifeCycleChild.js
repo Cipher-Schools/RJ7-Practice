@@ -4,7 +4,7 @@ export default class LifeCycleChild extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
+      name: "abhinav",
     };
   }
 
@@ -15,9 +15,11 @@ export default class LifeCycleChild extends Component {
         name: props.name,
       };
     }
-    return {
-      name: "ajay",
-    }; //No changes in state
+    return null; //No changes in state
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("lifecycleChild ShouldComponentUpdate");
   }
 
   render() {

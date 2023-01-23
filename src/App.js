@@ -25,6 +25,7 @@ import ComponentA from "./components/ComponentA";
 import Home from "./components/Home";
 import LifecycleA from "./components/LifecycleA";
 import Clock from "./components/Clock";
+import UpdateLifeCycle from "./components/UpdateLifeCycle";
 
 // import "./components/Forms.css";
 
@@ -32,8 +33,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <UpdateLifeCycle />
         {/* <Clock /> */}
-        <LifecycleA />
+        {/* <LifecycleA /> */}
         {/* <Home /> */}
         {/* <ComponentA /> */}
         {/* <Forms /> */}

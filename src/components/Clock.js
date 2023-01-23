@@ -27,11 +27,6 @@ export default class Clock extends Component {
     this.timer = setInterval(() => this.tick(), 1000);
   }
 
-  componentWillUnmount() {
-    console.log("Unmount");
-    clearInterval(this.timer);
-  }
-
   tick() {
     this.setState((prevState) => ({
       time: prevState.time + 1,
