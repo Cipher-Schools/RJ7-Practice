@@ -63,3 +63,21 @@ console.log("after: ", { details }, { copiedDetails });
 // copiedDetails.name = "Manjot";
 
 // console.log({ details }, { copiedDetails });
+
+// Shallow Comparision:
+/*
+  1) Primitive Type
+
+
+  2) Complex Type
+*/
+
+// 1)
+var person = "Shashi";
+console.log(persosn === "Shashi"); //true
+
+// complex
+
+var a = [1, 2, 3];
+var b = [1, 2, 3];
+console.log(a === b); //false

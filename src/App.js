@@ -22,10 +22,13 @@ import Parent from "./components/Parent";
 import Lists from "./components/Lists";
 import Forms from "./components/Forms";
 import ComponentA from "./components/ComponentA";
-import Home from "./components/Home";
+import Home from "./components/Pure/Home";
 import LifecycleA from "./components/LifecycleA";
 import Clock from "./components/Clock";
 import UpdateLifeCycle from "./components/UpdateLifeCycle";
+import Hero from "./components/ErrorLifeCycle/Hero";
+import ErrorBoundary from "./components/ErrorLifeCycle/ErrorBoundary";
+import Table from "./components/Fragment/Table";
 
 // import "./components/Forms.css";
 
@@ -33,7 +36,21 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <UpdateLifeCycle />
+        <Table />
+        {/* <Home /> */}
+        {/* ----------- Error Handling ------------ */}
+        {/* <ErrorBoundary>
+          <Hero name="Batman" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero name="Spiderman" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero name="Superman" />
+        </ErrorBoundary> */}
+        {/* --------------------------------------- */}
+
+        {/* <UpdateLifeCycle /> */}
         {/* <Clock /> */}
         {/* <LifecycleA /> */}
         {/* <Home /> */}
