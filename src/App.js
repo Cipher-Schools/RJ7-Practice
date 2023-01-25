@@ -29,6 +29,7 @@ import UpdateLifeCycle from "./components/UpdateLifeCycle";
 import Hero from "./components/ErrorLifeCycle/Hero";
 import ErrorBoundary from "./components/ErrorLifeCycle/ErrorBoundary";
 import Table from "./components/Fragment/Table";
+import FormRef from "./components/FormRef";
 
 // import "./components/Forms.css";
 
@@ -36,7 +37,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Table />
+        <FormRef />
+        {/* <Table /> */}
         {/* <Home /> */}
         {/* ----------- Error Handling ------------ */}
         {/* <ErrorBoundary>

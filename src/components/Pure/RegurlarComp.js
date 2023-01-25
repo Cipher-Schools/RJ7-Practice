@@ -7,4 +7,4 @@ class RegurlarComp extends Component {
   }
 }
 
-export default RegurlarComp;
+export default React.memo(RegurlarComp);

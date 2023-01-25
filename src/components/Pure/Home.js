@@ -11,19 +11,19 @@ class Home extends Component {
     };
   }
 
-  //   componentDidMount() {
-  //     setInterval(() => {
-  //       this.setState({
-  //         name: "shashi",
-  //       });
-  //     }, 2000);
-  //   }
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        name: "shashi",
+      });
+    }, 2000);
+  }
 
-  handleBtn = () => {
-    this.setState({
-      data: [...this.state.data, 5],
-    });
-  };
+  // handleBtn = () => {
+  //   this.setState({
+  //     data: [...this.state.data, 5],
+  //   });
+  // };
 
   render() {
     console.log("---------- Parent Component --------------");
