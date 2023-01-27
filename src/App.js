@@ -30,6 +30,11 @@ import Hero from "./components/ErrorLifeCycle/Hero";
 import ErrorBoundary from "./components/ErrorLifeCycle/ErrorBoundary";
 import Table from "./components/Fragment/Table";
 import FormRef from "./components/FormRef";
+import ClickCounter from "./components/HOC/ClickCounter";
+import MouseOverCounter from "./components/HOC/MouseOverCounter";
+import ComponentC from "./components/Context/ComponentC";
+import { UserProvider } from "./components/Context/UserContext";
+import { ThemeProvider } from "./components/Context/ThemeContext";
 
 // import "./components/Forms.css";
 
@@ -37,7 +42,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <FormRef />
+        <ThemeProvider value="dark">
+          <UserProvider value="Abhinav">
+            <ComponentC />
+          </UserProvider>
+        </ThemeProvider>
+        {/* <ClickCounter name="Ajay" />
+        <MouseOverCounter /> */}
+        {/* <FormRef /> */}
         {/* <Table /> */}
         {/* <Home /> */}
         {/* ----------- Error Handling ------------ */}
