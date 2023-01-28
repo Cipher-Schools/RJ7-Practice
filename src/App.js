@@ -42,13 +42,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <ThemeProvider value="dark">
+        {/* <ThemeProvider value="dark">
           <UserProvider value="Abhinav">
             <ComponentC />
           </UserProvider>
-        </ThemeProvider>
-        {/* <ClickCounter name="Ajay" />
-        <MouseOverCounter /> */}
+        </ThemeProvider> */}
+        <ClickCounter name="Ajay" />
+        <MouseOverCounter />
         {/* <FormRef /> */}
         {/* <Table /> */}
         {/* <Home /> */}
