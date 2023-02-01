@@ -15,7 +15,8 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Message from "./components/Message";
 import Welcome from "./components/Welcome";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+import Counter from "./components/Counter/Counter";
 import Counter2 from "./components/Counter2";
 import Alert from "./components/Alert";
 import Parent from "./components/Parent";
@@ -35,6 +36,9 @@ import MouseOverCounter from "./components/HOC/MouseOverCounter";
 import ComponentC from "./components/Context/ComponentC";
 import { UserProvider } from "./components/Context/UserContext";
 import { ThemeProvider } from "./components/Context/ThemeContext";
+import FormHook from "./components/FormHook";
+import MemoComp from "./components/MemoComp";
+import CounterEffect from "./components/Counter/CounterEffect";
 
 // import "./components/Forms.css";
 
@@ -42,13 +46,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        {/* <Counter /> */}
+        <CounterEffect />
+        {/* <MemoComp /> */}
+        {/* <FormHook /> */}
         {/* <ThemeProvider value="dark">
           <UserProvider value="Abhinav">
             <ComponentC />
           </UserProvider>
         </ThemeProvider> */}
-        <ClickCounter name="Ajay" />
-        <MouseOverCounter />
+        {/* <ClickCounter name="Ajay" />
+        <MouseOverCounter /> */}
         {/* <FormRef /> */}
         {/* <Table /> */}
         {/* <Home /> */}
