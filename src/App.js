@@ -39,6 +39,8 @@ import { ThemeProvider } from "./components/Context/ThemeContext";
 import FormHook from "./components/FormHook";
 import MemoComp from "./components/MemoComp";
 import CounterEffect from "./components/Counter/CounterEffect";
+import ParentTodo from "./components/Callback/ParentTodo";
+import Todo from "./components/Reducer/Todo";
 
 // import "./components/Forms.css";
 
@@ -46,8 +48,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        {/* <ParentTodo /> */}
+        <Todo />
         {/* <Counter /> */}
-        <CounterEffect />
+        {/* <CounterEffect /> */}
         {/* <MemoComp /> */}
         {/* <FormHook /> */}
         {/* <ThemeProvider value="dark">
