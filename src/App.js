@@ -41,6 +41,7 @@ import MemoComp from "./components/MemoComp";
 import CounterEffect from "./components/Counter/CounterEffect";
 import ParentTodo from "./components/Callback/ParentTodo";
 import Todo from "./components/Reducer/Todo";
+import FetchData from "./components/Custom/FetchData";
 
 // import "./components/Forms.css";
 
@@ -48,8 +49,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <FetchData />
         {/* <ParentTodo /> */}
-        <Todo />
+        {/* <Todo /> */}
         {/* <Counter /> */}
         {/* <CounterEffect /> */}
         {/* <MemoComp /> */}
